@@ -13,4 +13,4 @@ gradlew test   (on Windows)
 
 Start the server:
 
-gradlew run
+./gradlew run
