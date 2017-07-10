@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <entry key="dbClass">org.h2.Driver</entry>
+    <entry key="dbName">mt_test</entry>
+    <entry key="dbUrl">jdbc:h2:~/</entry>
+    <entry key="user">sa</entry>
+    <entry key="password"/>
+    <entry key="insertUser">
+INSERT INTO %SCHEMA%.users VALUES (?, ?)
+    </entry>
+    <entry key="insertAccount">
+INSERT INTO %SCHEMA%.accounts VALUES (?, ?, ?, ?, ?, ?)
+    </entry>
+    <entry key="findAccount">
+SELECT * FROM %SCHEMA%.accounts
+WHERE num = ?
+    </entry>
+    <entry key="updateAccountBalance">
+UPDATE %SCHEMA%.accounts
+SET balance = ?
+WHERE num = ?
+    </entry>
+    <entry key="insertCurRate">
+INSERT INTO %SCHEMA%.cur_rates VALUES (?, ?, ?)
+    </entry>
+    <entry key="allCurRates">
+SELECT * FROM %SCHEMA%.cur_rates
+    </entry>
+</properties>
